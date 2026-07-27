@@ -9,6 +9,8 @@
     content="Santiago Escobar - Asesor de Seguros de Factor Seguros"
   >
 
+  <meta name="theme-color" content="#0b4383">
+
   <title>Santiago Escobar | Factor Seguros</title>
 
   <link rel="stylesheet" href="styles.css">
@@ -16,39 +18,52 @@
 
 <body>
 
-  <main class="card">
+  <main class="digital-card">
 
-    <!-- ENCABEZADO -->
+    <!-- =========================
+         ENCABEZADO PRINCIPAL
+    ========================== -->
+
     <section class="hero">
 
       <div class="hero-content">
 
         <div class="brand">
           <div class="brand-logo">
-            <span class="logo-square blue-light"></span>
-            <span class="logo-square green"></span>
-            <span class="logo-square blue-dark"></span>
-            <span class="logo-square blue-dark"></span>
-            <span class="logo-check">✓</span>
-          </div>
-
-          <div class="brand-text">
-            <div class="brand-name">
-              <strong>FACTOR</strong><sup>®</sup>
-              <strong>SEGUROS</strong>
+            <div class="logo-grid">
+              <span class="logo-square blue-light"></span>
+              <span class="logo-square green"></span>
+              <span class="logo-square blue-dark"></span>
+              <span class="logo-square blue-dark"></span>
+              <span class="logo-check">✓</span>
             </div>
 
-            <p>Especialistas en seguros</p>
+            <div class="brand-text">
+              <div class="factor">
+                FACTOR<sup>®</sup>
+              </div>
+
+              <div class="seguros">
+                SEGUROS
+              </div>
+
+              <div class="tagline">
+                Especialistas en seguros
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="profile-info">
+
+        <div class="personal-info">
 
           <h1>
             SANTIAGO <span>ESCOBAR</span>
           </h1>
 
-          <h2>Asesor de Seguros</h2>
+          <h2>
+            Asesor de Seguros
+          </h2>
 
           <div class="slogan">
             <span></span>
@@ -56,33 +71,53 @@
             <span></span>
           </div>
 
-          <!-- CONTACTO -->
+
+          <!-- INFORMACIÓN DE CONTACTO -->
+
           <div class="contact-info">
 
-            <div class="contact-row">
-              <div class="contact-icon whatsapp">◉</div>
+            <a
+              href="https://wa.me/573001006932?text=Hola%20Santiago%2C%20vi%20tu%20tarjeta%20digital%20de%20Factor%20Seguros%20y%20quisiera%20recibir%20asesor%C3%ADa."
+              class="contact-row"
+              target="_blank"
+              rel="noopener"
+            >
+              <div class="contact-icon whatsapp">
+                ◉
+              </div>
 
               <div>
                 <strong>300 100 6932</strong>
                 <small>Línea y WhatsApp</small>
               </div>
-            </div>
+            </a>
 
-            <div class="contact-row">
-              <div class="contact-icon email">✉</div>
+
+            <a
+              href="mailto:santiesco221@gmail.com"
+              class="contact-row"
+            >
+              <div class="contact-icon email">
+                ✉
+              </div>
 
               <div>
                 <strong>santiesco221@gmail.com</strong>
                 <small>Correo electrónico</small>
               </div>
-            </div>
+            </a>
 
-            <div class="contact-row">
-              <div class="contact-icon location">●</div>
+
+            <div class="contact-row location-row">
+
+              <div class="contact-icon location">
+                ●
+              </div>
 
               <div>
                 <strong>Bogotá, Colombia</strong>
               </div>
+
             </div>
 
           </div>
@@ -91,23 +126,35 @@
 
       </div>
 
-      <!-- FOTO -->
-      <div class="hero-right">
 
-        <div class="photo-container">
+      <!-- =========================
+           FOTO Y MENSAJE
+      ========================== -->
+
+      <div class="hero-photo-area">
+
+        <div class="photo-frame">
+
           <img
             src="assets/foto-santiago.jpg"
             alt="Santiago Escobar - Asesor de Seguros"
           >
+
         </div>
 
-        <div class="quote">
-          <span class="quote-mark">“</span>
+
+        <div class="commitment">
+
+          <div class="quote-mark">
+            “
+          </div>
+
           <p>
             Mi compromiso es
             <strong>proteger</strong>
             lo que más valoras.
           </p>
+
         </div>
 
       </div>
@@ -115,90 +162,156 @@
     </section>
 
 
-    <!-- BOTONES FUNCIONALES -->
+
+    <!-- =========================
+         BOTONES DE CONTACTO
+    ========================== -->
+
     <section class="actions">
 
       <a
-        class="action-button green-button"
-        href="https://wa.me/573001006932?text=Hola%20Santiago,%20vi%20tu%20tarjeta%20digital%20de%20Factor%20Seguros%20y%20quisiera%20recibir%20información."
+        class="action-button whatsapp-button"
+        href="https://wa.me/573001006932?text=Hola%20Santiago%2C%20vi%20tu%20tarjeta%20digital%20de%20Factor%20Seguros%20y%20quisiera%20recibir%20asesor%C3%ADa."
         target="_blank"
+        rel="noopener"
       >
         <span class="action-icon">◉</span>
-        <strong>Hablar por<br>WhatsApp</strong>
+        <span>Hablar por<br>WhatsApp</span>
       </a>
 
 
       <a
-        class="action-button blue-button"
+        class="action-button call-button"
         href="tel:+573001006932"
       >
         <span class="action-icon">☎</span>
-        <strong>Llamar<br>ahora</strong>
+        <span>Llamar<br>ahora</span>
       </a>
 
 
       <a
-        class="action-button blue-button"
-        href="mailto:santiesco221@gmail.com?subject=Consulta%20sobre%20seguros"
+        class="action-button email-button"
+        href="mailto:santiesco221@gmail.com"
       >
         <span class="action-icon">✉</span>
-        <strong>Enviar<br>correo</strong>
+        <span>Enviar<br>correo</span>
       </a>
 
 
       <a
-        class="action-button green-button"
+        class="action-button save-button"
         href="contacto-santiago.vcf"
-        download
+        download="contacto-santiago.vcf"
       >
         <span class="action-icon">♙</span>
-        <strong>Guardar<br>contacto</strong>
+        <span>Guardar<br>contacto</span>
       </a>
 
     </section>
 
 
-    <!-- SERVICIOS -->
+
+    <!-- =========================
+         SERVICIOS
+    ========================== -->
+
     <section class="services">
 
       <h2>
         Nuestros <span>Servicios</span>
       </h2>
 
+
       <div class="services-grid">
 
+
         <div class="service">
-          <div class="service-number">1</div>
-          <div class="service-icon">🚗</div>
-          <h3>Seguro de<br>Autos y Pesados</h3>
+
+          <div class="service-number">
+            1
+          </div>
+
+          <div class="service-icon">
+            🚗
+          </div>
+
+          <h3>
+            Seguro de<br>
+            Autos y Pesados
+          </h3>
+
         </div>
 
 
         <div class="service">
-          <div class="service-number">2</div>
-          <div class="service-icon">🏢</div>
-          <h3>Seguro de<br>Arrendamientos</h3>
+
+          <div class="service-number">
+            2
+          </div>
+
+          <div class="service-icon">
+            🏢
+          </div>
+
+          <h3>
+            Seguro de<br>
+            Arrendamientos
+          </h3>
+
         </div>
 
 
         <div class="service">
-          <div class="service-number">3</div>
-          <div class="service-icon">♡</div>
-          <h3>Seguro<br>de Vida</h3>
+
+          <div class="service-number">
+            3
+          </div>
+
+          <div class="service-icon">
+            ♡
+          </div>
+
+          <h3>
+            Seguro<br>
+            de Vida
+          </h3>
+
         </div>
 
 
         <div class="service">
-          <div class="service-number">4</div>
-          <div class="service-icon">＋</div>
-          <h3>Seguro<br>de Salud</h3>
+
+          <div class="service-number">
+            4
+          </div>
+
+          <div class="service-icon">
+            +
+          </div>
+
+          <h3>
+            Seguro<br>
+            de Salud
+          </h3>
+
         </div>
 
 
-        <div class="service">
-          <div class="service-number">5</div>
-          <div class="service-icon more">•••</div>
-          <h3>Y muchos<br>más</h3>
+        <div class="service more-service">
+
+          <div class="service-number">
+            5
+          </div>
+
+          <div class="service-icon">
+            •••
+          </div>
+
+          <h3>
+            Y muchos<br>
+            más
+          </h3>
+
         </div>
 
       </div>
@@ -206,10 +319,18 @@
     </section>
 
 
-    <!-- LLAMADO A LA ACCIÓN -->
+
+    <!-- =========================
+         LLAMADO A LA ACCIÓN
+    ========================== -->
+
     <section class="cta">
 
-      <div class="cta-text">
+      <div class="cta-content">
+
+        <div class="shield">
+          ✓
+        </div>
 
         <h2>
           ¿Necesitas proteger<br>
@@ -222,10 +343,12 @@
           a tus necesidades.
         </p>
 
+
         <a
           class="cta-button"
-          href="https://wa.me/573001006932?text=Hola%20Santiago,%20quiero%20asesoría%20sobre%20seguros."
+          href="https://wa.me/573001006932?text=Hola%20Santiago%2C%20quisiera%20recibir%20asesor%C3%ADa%20sobre%20seguros."
           target="_blank"
+          rel="noopener"
         >
           ◉ &nbsp; ESCRIBIR POR WHATSAPP
         </a>
@@ -234,28 +357,44 @@
 
 
       <div class="family-image">
+
         <div class="family-overlay">
-          🛡️
+          🛡
         </div>
+
       </div>
 
     </section>
 
 
-    <!-- PIE -->
+
+    <!-- =========================
+         PIE DE TARJETA
+    ========================== -->
+
     <footer>
 
       <div>
-        🛡️ &nbsp; Confianza
-        <span>•</span>
+        ♢ &nbsp; Confianza
+      </div>
+
+      <span>•</span>
+
+      <div>
         Experiencia
-        <span>•</span>
+      </div>
+
+      <span>•</span>
+
+      <div>
         Respaldo
       </div>
 
-      <div class="footer-brand">
+      <div class="footer-divider"></div>
+
+      <div>
         Factor Seguros,
-        <span>contigo siempre.</span>
+        <strong>contigo siempre.</strong>
       </div>
 
     </footer>
