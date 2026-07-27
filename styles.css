@@ -438,11 +438,36 @@ a {
   text-align: center;
   padding: 0 15px;
   border-right: 1px solid var(--green);
+
+  /* Interactividad */
+  cursor: pointer;
+  border-radius: 14px;
+
+  transition:
+    transform 0.25s ease,
+    background-color 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
 .service:last-child {
   border-right: none;
 }
+
+/* Efecto al pasar el cursor */
+
+.service:hover {
+  transform: translateY(-6px);
+  background-color: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+}
+
+/* Efecto al presionar */
+
+.service:active {
+  transform: translateY(-2px) scale(0.98);
+}
+
+/* Número */
 
 .service-number {
   position: absolute;
@@ -459,7 +484,21 @@ a {
   justify-content: center;
   font-weight: bold;
   font-size: 18px;
+  z-index: 2;
+
+  transition:
+    transform 0.25s ease,
+    background-color 0.25s ease;
 }
+
+/* Número activo al pasar el cursor */
+
+.service:hover .service-number {
+  transform: translateX(-50%) scale(1.1);
+  background-color: var(--green-bright);
+}
+
+/* Icono */
 
 .service-icon {
   width: 105px;
@@ -473,11 +512,42 @@ a {
   justify-content: center;
   font-size: 40px;
   font-weight: bold;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+/* Icono activo */
+
+.service:hover .service-icon {
+  transform: scale(1.08);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .service h3 {
   font-size: 18px;
   line-height: 1.25;
+
+  transition:
+    color 0.25s ease;
+}
+
+/* Texto activo */
+
+.service:hover h3 {
+  color: var(--green-bright);
+}
+
+/* Accesibilidad al navegar con teclado */
+
+.service:focus {
+  outline: 3px solid var(--green-bright);
+  outline-offset: 4px;
+}
+
+.service:focus:not(:focus-visible) {
+  outline: none;
 }
 
 
@@ -875,6 +945,20 @@ footer strong {
 
   .footer-divider {
     display: none;
+  }
+
+  /* Mejor interacción táctil en celulares */
+
+  .service {
+    -webkit-tap-highlight-color: rgba(64, 201, 30, 0.2);
+  }
+
+  .service:active .service-icon {
+    transform: scale(0.96);
+  }
+
+  .service:active .service-number {
+    transform: translateX(-50%) scale(0.95);
   }
 
 }
